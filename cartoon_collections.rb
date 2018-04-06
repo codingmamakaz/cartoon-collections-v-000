@@ -16,7 +16,7 @@ end
 
 
 def find_the_cheese(some_array)
-  some_array.any? do |x|
+  some_array.find do |x|
     if ["cheddar", "gouda", "camembert"].include?(x)
       x
     end
