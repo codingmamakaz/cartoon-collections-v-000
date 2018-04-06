@@ -17,5 +17,8 @@ end
 
 def find_the_cheese(some_array)
   binding.pry
-  some_array.any?{|x| ["cheddar", "gouda", "camembert"].include?(x)}
+  some_array.any? do |x|
+    if ["cheddar", "gouda", "camembert"].include?(x)
+      x
+    end
 end
